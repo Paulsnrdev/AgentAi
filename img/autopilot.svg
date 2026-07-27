@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 534" font-family="system-ui,-apple-system,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#021412"/>
+      <stop offset="100%" stop-color="#010807"/>
+    </linearGradient>
+    <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="534" fill="url(#bg)"/>
+  <ellipse cx="400" cy="280" rx="380" ry="260" fill="#0d9488" opacity="0.04"/>
+  <ellipse cx="680" cy="100" rx="200" ry="160" fill="#14b8a6" opacity="0.05"/>
+
+  <!-- TOP NAV -->
+  <rect width="800" height="46" fill="#010a09" opacity="0.95"/>
+  <circle cx="22" cy="23" r="7" fill="#14b8a6"/>
+  <text x="36" y="28" fill="white" font-size="13" font-weight="700">AutoPilot</text>
+  <text x="340" y="28" fill="#555" font-size="11">Overview</text>
+  <text x="394" y="28" fill="#444" font-size="11">Incidents</text>
+  <text x="446" y="28" fill="#444" font-size="11">Services</text>
+  <text x="498" y="28" fill="#444" font-size="11">Playbooks</text>
+  <rect x="686" y="12" width="98" height="22" rx="11" fill="#0d9488"/>
+  <text x="735" y="27" fill="white" font-size="10" font-weight="600" text-anchor="middle">Run Playbook</text>
+
+  <!-- STATUS BANNER: all systems operational -->
+  <rect x="0" y="46" width="800" height="36" fill="rgba(20,184,166,0.1)" style="border-bottom:1px solid"/>
+  <circle cx="184" cy="64" r="5" fill="#22c55e"/>
+  <circle cx="184" cy="64" r="9" fill="#22c55e" opacity="0.2"/>
+  <text x="198" y="68" fill="#22c55e" font-size="11" font-weight="600">All Systems Operational</text>
+  <text x="380" y="68" fill="#333" font-size="10">·  99.98% uptime last 30d</text>
+  <text x="560" y="68" fill="#333" font-size="10">·  MTTR reduced 67%</text>
+  <text x="700" y="68" fill="#333" font-size="10">·  0 P1 incidents</text>
+
+  <!-- SIDEBAR -->
+  <rect x="0" y="82" width="168" height="452" fill="#020e0c" opacity="0.9"/>
+  <rect x="0" y="106" width="168" height="28" fill="#0d9488" opacity="0.15"/>
+  <rect x="10" y="113" width="3" height="14" rx="1.5" fill="#14b8a6"/>
+  <text x="22" y="124" fill="white" font-size="11" font-weight="600">Overview</text>
+  <text x="18" y="155" fill="#1e1e1e" font-size="11">Incidents</text>
+  <text x="18" y="181" fill="#1e1e1e" font-size="11">Services</text>
+  <text x="18" y="207" fill="#1e1e1e" font-size="11">Alerts</text>
+  <text x="18" y="233" fill="#1e1e1e" font-size="11">Playbooks</text>
+  <text x="18" y="259" fill="#1e1e1e" font-size="11">Integrations</text>
+
+  <!-- On-call badge -->
+  <rect x="10" y="438" width="148" height="50" rx="10" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.25)" stroke-width="1"/>
+  <text x="22" y="457" fill="#14b8a6" font-size="9" font-weight="700">🤖 AI Active</text>
+  <text x="22" y="473" fill="#333" font-size="9">Auto-resolving alerts</text>
+  <text x="22" y="482" fill="#333" font-size="8">·  12 resolved today</text>
+
+  <!-- STAT CARDS -->
+  <rect x="182" y="93" width="146" height="82" rx="10" fill="#020f0d" stroke="#062220" stroke-width="1"/>
+  <text x="198" y="112" fill="#555" font-size="9" font-weight="600" letter-spacing="0.8">MTTR (MEAN)</text>
+  <text x="198" y="148" fill="white" font-size="32" font-weight="800">4.2m</text>
+  <text x="198" y="165" fill="#22c55e" font-size="9">▼ was 12.7m · −67%</text>
+
+  <rect x="338" y="93" width="146" height="82" rx="10" fill="#020f0d" stroke="#062220" stroke-width="1"/>
+  <text x="354" y="112" fill="#555" font-size="9" font-weight="600" letter-spacing="0.8">AUTO-RESOLVED</text>
+  <text x="354" y="148" fill="white" font-size="32" font-weight="800">89%</text>
+  <text x="354" y="165" fill="#14b8a6" font-size="9">▲ no human needed</text>
+
+  <rect x="494" y="93" width="290" height="82" rx="10" fill="#020f0d" stroke="#062220" stroke-width="1"/>
+  <text x="510" y="112" fill="#555" font-size="9" font-weight="600" letter-spacing="0.8">INCIDENTS THIS WEEK</text>
+  <!-- Spark bar chart -->
+  <rect x="510" y="130" width="12" height="20" rx="2" fill="#0d9488" opacity="0.5"/>
+  <rect x="526" y="122" width="12" height="28" rx="2" fill="#0d9488" opacity="0.6"/>
+  <rect x="542" y="118" width="12" height="32" rx="2" fill="#0d9488" opacity="0.7"/>
+  <rect x="558" y="126" width="12" height="24" rx="2" fill="#ef4444" opacity="0.6"/>
+  <rect x="574" y="114" width="12" height="36" rx="2" fill="#ef4444" opacity="0.7"/>
+  <rect x="590" y="130" width="12" height="20" rx="2" fill="#14b8a6" opacity="0.8"/>
+  <rect x="606" y="134" width="12" height="16" rx="2" fill="#14b8a6"/>
+  <text x="636" y="148" fill="white" font-size="32" font-weight="800">7</text>
+  <text x="636" y="165" fill="#22c55e" font-size="9">▼ −58% vs last month</text>
+
+  <!-- RESPONSE TIME CHART -->
+  <rect x="182" y="185" width="458" height="190" rx="10" fill="#020f0d" stroke="#062220" stroke-width="1"/>
+  <text x="200" y="207" fill="white" font-size="12" font-weight="600">Response Time vs Resolution</text>
+  <text x="570" y="207" fill="#14b8a6" font-size="9">· 30 days</text>
+
+  <!-- Grid -->
+  <line x1="200" y1="224" x2="628" y2="224" stroke="#061a18" stroke-width="1"/>
+  <line x1="200" y1="246" x2="628" y2="246" stroke="#061a18" stroke-width="1"/>
+  <line x1="200" y1="268" x2="628" y2="268" stroke="#061a18" stroke-width="1"/>
+  <line x1="200" y1="290" x2="628" y2="290" stroke="#061a18" stroke-width="1"/>
+  <line x1="200" y1="312" x2="628" y2="312" stroke="#061a18" stroke-width="1"/>
+  <line x1="200" y1="334" x2="628" y2="334" stroke="#061a18" stroke-width="1"/>
+
+  <!-- MTTR area (improved, going down) -->
+  <polygon points="200,334 258,330 316,318 374,298 432,270 490,248 548,232 628,222 628,350 200,350" fill="url(#tg)" opacity="0.4"/>
+  <polyline points="200,334 258,330 316,318 374,298 432,270 490,248 548,232 628,222" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Incident spikes (red) -->
+  <polygon points="370,290 385,240 400,290" fill="url(#rg)" opacity="0.6"/>
+  <polygon points="480,280 495,232 510,280" fill="url(#rg)" opacity="0.4"/>
+
+  <!-- End dot -->
+  <circle cx="628" cy="222" r="5" fill="#14b8a6"/>
+  <circle cx="628" cy="222" r="9" fill="#14b8a6" opacity="0.22"/>
+
+  <!-- Annotation: AI started -->
+  <line x1="374" y1="220" x2="374" y2="340" stroke="#14b8a6" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="340" y="213" width="68" height="16" rx="8" fill="rgba(20,184,166,0.18)" stroke="#14b8a6" stroke-width="0.8"/>
+  <text x="374" y="225" fill="#14b8a6" font-size="8" text-anchor="middle" font-weight="600">AI enabled</text>
+
+  <!-- Y labels -->
+  <text x="198" y="228" fill="#222" font-size="8" text-anchor="end">20m</text>
+  <text x="198" y="290" fill="#222" font-size="8" text-anchor="end">10m</text>
+  <text x="198" y="340" fill="#222" font-size="8" text-anchor="end">0m</text>
+
+  <!-- Legend -->
+  <line x1="200" y1="358" x2="218" y2="358" stroke="#14b8a6" stroke-width="2"/>
+  <text x="223" y="362" fill="#444" font-size="9">MTTR</text>
+  <rect x="260" y="353" width="12" height="8" rx="2" fill="#ef4444" opacity="0.6"/>
+  <text x="278" y="362" fill="#444" font-size="9">Incident spike</text>
+
+  <!-- SERVICES STATUS PANEL -->
+  <rect x="650" y="185" width="134" height="190" rx="10" fill="#020f0d" stroke="#062220" stroke-width="1"/>
+  <text x="664" y="207" fill="white" font-size="11" font-weight="600">Services</text>
+
+  <!-- Service rows -->
+  <circle cx="664" cy="228" r="5" fill="#22c55e"/>
+  <text x="676" y="232" fill="white" font-size="9" font-weight="500">API Gateway</text>
+  <text x="760" y="232" fill="#22c55e" font-size="8" text-anchor="end">99.9%</text>
+
+  <circle cx="664" cy="252" r="5" fill="#22c55e"/>
+  <text x="676" y="256" fill="white" font-size="9">Auth Service</text>
+  <text x="760" y="256" fill="#22c55e" font-size="8" text-anchor="end">100%</text>
+
+  <circle cx="664" cy="276" r="5" fill="#22c55e"/>
+  <text x="676" y="280" fill="white" font-size="9">Database</text>
+  <text x="760" y="280" fill="#22c55e" font-size="8" text-anchor="end">99.8%</text>
+
+  <circle cx="664" cy="300" r="5" fill="#f59e0b"/>
+  <text x="676" y="304" fill="#aaa" font-size="9">Storage S3</text>
+  <text x="760" y="304" fill="#f59e0b" font-size="8" text-anchor="end">98.2%</text>
+
+  <circle cx="664" cy="324" r="5" fill="#22c55e"/>
+  <text x="676" y="328" fill="white" font-size="9">CDN Edge</text>
+  <text x="760" y="328" fill="#22c55e" font-size="8" text-anchor="end">99.9%</text>
+
+  <circle cx="664" cy="348" r="5" fill="#22c55e"/>
+  <text x="676" y="352" fill="white" font-size="9">Message Queue</text>
+  <text x="760" y="352" fill="#22c55e" font-size="8" text-anchor="end">100%</text>
+
+  <!-- INCIDENT LOG -->
+  <rect x="182" y="385" width="602" height="113" rx="10" fill="#020f0d" stroke="#062220" stroke-width="1"/>
+  <text x="200" y="407" fill="white" font-size="12" font-weight="600">Recent Incidents</text>
+  <text x="554" y="407" fill="#333" font-size="9">Auto-resolved by AI unless marked</text>
+
+  <!-- Headers -->
+  <text x="200" y="423" fill="#222" font-size="8" font-weight="600">ID</text>
+  <text x="248" y="423" fill="#222" font-size="8" font-weight="600">SERVICE</text>
+  <text x="360" y="423" fill="#222" font-size="8" font-weight="600">DESCRIPTION</text>
+  <text x="560" y="423" fill="#222" font-size="8" font-weight="600">RESOLUTION</text>
+  <text x="640" y="423" fill="#222" font-size="8" font-weight="600">MTTR</text>
+  <text x="690" y="423" fill="#222" font-size="8" font-weight="600">STATUS</text>
+  <line x1="200" y1="427" x2="772" y2="427" stroke="#061a18" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <rect x="192" y="432" width="4" height="20" rx="2" fill="#22c55e"/>
+  <text x="200" y="446" fill="#666" font-size="9">#INS-9201</text>
+  <text x="248" y="446" fill="white" font-size="9">API Gateway</text>
+  <text x="360" y="446" fill="#555" font-size="9">High latency spike detected</text>
+  <text x="560" y="446" fill="#14b8a6" font-size="9">Auto: scaled replicas</text>
+  <text x="640" y="446" fill="white" font-size="9" font-weight="600">3.2 min</text>
+  <rect x="690" y="434" width="68" height="14" rx="7" fill="rgba(34,197,94,0.15)"/>
+  <text x="724" y="444" fill="#22c55e" font-size="8" text-anchor="middle" font-weight="600">RESOLVED</text>
+
+  <!-- Row 2 -->
+  <rect x="192" y="456" width="4" height="20" rx="2" fill="#22c55e"/>
+  <text x="200" y="470" fill="#666" font-size="9">#INS-9198</text>
+  <text x="248" y="470" fill="white" font-size="9">Storage S3</text>
+  <text x="360" y="470" fill="#555" font-size="9">Bucket ACL misconfiguration</text>
+  <text x="560" y="470" fill="#14b8a6" font-size="9">Auto: reverted config</text>
+  <text x="640" y="470" fill="white" font-size="9" font-weight="600">1.8 min</text>
+  <rect x="690" y="458" width="68" height="14" rx="7" fill="rgba(34,197,94,0.15)"/>
+  <text x="724" y="468" fill="#22c55e" font-size="8" text-anchor="middle" font-weight="600">RESOLVED</text>
+
+  <!-- Row 3 -->
+  <rect x="192" y="480" width="4" height="20" rx="2" fill="#f59e0b"/>
+  <text x="200" y="494" fill="#666" font-size="9">#INS-9191</text>
+  <text x="248" y="494" fill="white" font-size="9">Database</text>
+  <text x="360" y="494" fill="#555" font-size="9">Slow query locks on table users</text>
+  <text x="560" y="494" fill="#f59e0b" font-size="9">Manual: DBA reviewed</text>
+  <text x="640" y="494" fill="white" font-size="9" font-weight="600">8.4 min</text>
+  <rect x="690" y="482" width="68" height="14" rx="7" fill="rgba(245,158,11,0.12)"/>
+  <text x="724" y="492" fill="#f59e0b" font-size="8" text-anchor="middle" font-weight="600">MANUAL</text>
+</svg>
